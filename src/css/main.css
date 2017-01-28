@@ -1,5 +1,7 @@
 body {
   margin: 0;
+
+  font-family: 'Poppins', sans-serif;
 }
 
 /* navbar */
@@ -36,10 +38,15 @@ footer .footer-icon {
 
 .carousel {
   overflow: hidden;
+  font-size: 20px;
+  line-height: 40px;
 }
 
 .carousel img {
   width: 100%;
+  -webkit-filter: brightness(0.8);
+  -moz-filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 
 .carousel-caption {
