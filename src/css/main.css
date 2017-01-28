@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+/* navbar */
+
+nav, .navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Audiowide', monospace;
+}
+
+.logo img {
+  height: 40px;
+  margin: 5px;
+}
+
+footer {
+  height: 80px;
+  padding-top: 10px;
+
+  background-color: #23718c;
+  color: #cad1d4;
+}
+
+footer .footer-icon {
+  height: 60px;
+}
+
+/* Carousel */
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}

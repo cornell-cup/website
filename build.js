@@ -5,6 +5,11 @@ var Mustache = require("mustache");
 var ncp = require("ncp");
 var path = require("path");
 
+// Capitalize a sentence
+var capitalize = function(str) {
+    return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.substring(1)).join(" ");
+};
+
 // Create the output directory
 try {
     if (!fs.lstatSync("build").isDirectory()) {
@@ -32,10 +37,12 @@ pagePaths.forEach(function(pagePath) {
 
     // Compute data view
     var data = {
+        name: capitalize(pageName),
         header: "",
         footer: "",
         pages: fileNames.map(fileName => ({
             name: fileName,
+            cname: capitalize(fileName),
             active: fileName === pageName
         }))
     };
@@ -65,10 +72,13 @@ pagePaths.forEach(function(pagePath) {
 
 
 // Copy resource folders
-async.map(["extra/*", "css", "js", "images"],
+async.map(["css", "js", "images"],
     function(folder, callback) {
         ncp.ncp("src/" + folder, "build/" + folder, function(err) {
             callback(err);
         });
     }
 );
+
+// Copy extra folder to root
+ncp.ncp("src/extra", "build");

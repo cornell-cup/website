@@ -2,33 +2,44 @@
 <html>
 <head>
     <title>Cornell Cup - {{name}}</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
 
-    <!-- Include Rocket-Flicker -->
-    <script src="js/rocket-tools.min.js"></script>
-    <script src="js/rocket-flicker.min.js"></script>
-    <script src="js/hammer.min.js"></script>
-    <link href="css/rocket-flicker.min.css"  type="text/css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Main Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-    <link type= "text/css" rel= "stylesheet" href= "css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav">
-        <div class="left-nav">
-            <p class="logo">Cornell Cup</p>
-        </div>
-
-        <div class="nav-button">
-            <button>&equiv;</button>
-        </div>
-
-        <div class="right-nav">
-            {{#pages}}
-                <a href="{{name}}.html" class="{{#active}}active{{/active}}">{{name}}</a>
-            {{/pages}}
-            <a href="mailto:rjf257@cornell.edu,hrd24@cornell.edu?subject=Cornell%20Cup%20Website%20Inquiry">Contact Us</a>
-            <span tabindex="0" class="end-nav"></span>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="logo">
+                    <img src="images/logo.png">
+                    Cornell Cup Robotics
+                </span>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                {{#pages}}
+                    <li class="{{#active}}active{{/active}}">
+                        <a href="{{name}}.html">{{cname}}</a>
+                    </li>
+                {{/pages}}
+                    <li>
+                        <a href="mailto:rjf257@cornell.edu,hrd24@cornell.edu?subject=Cornell%20Cup%20Website%20Inquiry">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
