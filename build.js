@@ -26,7 +26,13 @@ var footerRaw = fs.readFileSync("src/footer.html").toString();
 var redirectRaw = fs.readFileSync("src/redirect.html").toString();
 
 // Find all pages
-var pagePaths = glob.sync("src/pages/*");
+var pagePaths = [
+    "src/pages/home.html",
+    "src/pages/about.html",
+    "src/pages/projects.html",
+    "src/pages/sponsors.html",
+    "src/pages/recruiting.html"
+];
 var fileNames = pagePaths.map(function(page) {
     return path.basename(page, ".html");
 });
