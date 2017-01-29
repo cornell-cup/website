@@ -1,5 +1,5 @@
 # Cornell Cup Robotics Website
-[cornellcuprobotics.com](cornellcuprobotics.com)
+[cornellcuprobotics.com](http://cornellcuprobotics.com)
 
 To build:
 ```
