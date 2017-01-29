@@ -1,4 +1,6 @@
 body {
+  height: 100%;
+
   margin: 0;
 
   font-family: 'Poppins', sans-serif;
@@ -23,13 +25,19 @@ nav, .navbar {
   font-family: 'Audiowide', monospace;
 }
 
+@media all and (max-device-width: 360px) {
+  .logo {
+    font-size: 16px;
+  }
+}
+
 .logo img {
   height: 40px;
   margin: 5px;
 }
 
 footer {
-  height: 80px;
+  height: 60px;
   padding-top: 10px;
 
   background-color: #23718c;
@@ -37,22 +45,29 @@ footer {
 }
 
 footer .footer-icon {
-  height: 60px;
+  height: 40px;
 }
 
 /* Carousel */
 
 .carousel {
   overflow: hidden;
-  font-size: 20px;
-  line-height: 40px;
+  height: 600px;
+  line-height: 1.5em;
 }
 
-.carousel img {
-  width: 100%;
-  -webkit-filter: brightness(0.8);
-  -moz-filter: brightness(0.8);
-  filter: brightness(0.8);
+.carousel .item {
+  height: 600px;
+}
+
+.carousel-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .carousel-caption {

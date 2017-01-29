@@ -3,7 +3,7 @@
 <head>
     <title>Cornell Cup - {{name}}</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale= 1">
+    <meta id="mview" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
 
@@ -29,7 +29,7 @@
                     Cornell Cup Robotics
                 </span>
             </div>
-            <div class="navbar-collapse collapse">
+            <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                 {{#pages}}
                     <li class="{{#active}}active{{/active}}">
