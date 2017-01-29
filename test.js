@@ -1,6 +1,5 @@
 var fs = require('fs');
 var path = require('path');
-var showdown = require('showdown');
 var express = require('express');
 var app = express();
 var port = 8080;
