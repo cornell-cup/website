@@ -65,7 +65,6 @@ footer .footer-icon {
 .carousel-image {
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -79,4 +78,10 @@ footer .footer-icon {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+}
+
+/* Rows */
+.row {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
