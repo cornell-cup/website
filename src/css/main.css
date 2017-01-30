@@ -45,12 +45,19 @@ nav, .navbar {
   margin: 5px;
 }
 
+/* footer */
+
 footer {
   height: 60px;
   padding-top: 10px;
 
   background-color: #23718c;
   color: #cad1d4;
+}
+
+footer .footer-link {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 footer .footer-icon {
@@ -92,6 +99,7 @@ footer .footer-icon {
 }
 
 /* Rows */
+
 .row .spaced {
   margin-top: 40px;
   margin-bottom: 40px;
