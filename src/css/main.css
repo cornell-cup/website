@@ -2,8 +2,15 @@
 @-o-viewport      { width: device-width; }
 @viewport         { width: device-width; }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+
   margin: 0;
+  padding: 0;
 
   font-family: 'Poppins', sans-serif;
 }
@@ -54,12 +61,16 @@ footer .footer-icon {
 
 .carousel {
   overflow: hidden;
-  height: 600px;
+  height: calc(100% - 80px);
   line-height: 1.5em;
 }
 
 .carousel .item {
-  height: 600px;
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
 }
 
 .carousel-image {
@@ -81,7 +92,7 @@ footer .footer-icon {
 }
 
 /* Rows */
-.row {
+.row .spaced {
   margin-top: 40px;
   margin-bottom: 40px;
 }
