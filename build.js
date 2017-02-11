@@ -78,7 +78,7 @@ pagePaths.forEach(function(pagePath) {
 
 
 // Copy resource folders
-async.map(["css", "js", "images"],
+async.map(["css", "js", "images", "files"],
     function(folder, callback) {
         ncp.ncp("src/" + folder, "build/" + folder, function(err) {
             callback(err);
