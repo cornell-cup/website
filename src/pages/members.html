@@ -1,0 +1,30 @@
+{{{header}}}
+
+<link href="css/members.css" type="text/css" rel="stylesheet">
+
+<div class="spacer"></div>
+
+<div class="container members">
+    <h1>Team Leads</h1>
+    <div class="row text-center">
+        {{#leads}}
+            <div class="col-md-4 member member-lead">
+                <img src="images/members/{{imagefile}}" class="img-responsive center-block">
+                <div class="member-name">{{firstname}} {{lastname}}</div>
+                <div class="member-position">{{position}}</div>
+            </div>
+        {{/leads}}
+    </div>
+    <h1>Members</h1>
+    <div class="row text-center">
+        {{#members}}
+            <div class="col-md-4 member">
+                <img src="images/members/{{imagefile}}" class="img-responsive center-block">
+                <div class="member-name">{{firstname}} {{lastname}}</div>
+                <div class="member-position">{{team}} - {{subteam}} ({{major}})</div>
+            </div>
+        {{/members}}
+    </div>
+</div>
+
+{{{footer}}}

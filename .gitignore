@@ -1,6 +1,10 @@
 # Built website
 build
 
+# Temporary data folder
+tmp
+Thumbs.db
+
 # Logs
 logs
 *.log
