@@ -63,6 +63,19 @@ var fileNames = pagePaths.map(function(page) {
 // Parse leads and members
 var leads = parseCSV("src/images/members/leads.csv");
 var members = parseCSV("src/images/members/members.csv");
+var teams = [];
+members.forEach(member => {
+    var team = teams.find(team => team.name === member.team);
+    if (team) {
+        team.members.push(member);
+    }
+    else {
+        teams.push({
+            name: member.team,
+            members: [member]
+        });
+    }
+});
 
 pagePaths.forEach(function(pagePath) {
     // Read the raw page
@@ -80,7 +93,7 @@ pagePaths.forEach(function(pagePath) {
             active: fileName === pageName
         })),
         leads: leads,
-        members: members
+        teams: teams
     };
 
     // Render the header and footer first

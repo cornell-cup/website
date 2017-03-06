@@ -15,16 +15,18 @@
             </div>
         {{/leads}}
     </div>
-    <h1>Members</h1>
-    <div class="row text-center">
-        {{#members}}
-            <div class="col-md-4 member">
-                <img src="images/members/{{imagefile}}" class="img-responsive center-block">
-                <div class="member-name">{{firstname}} {{lastname}}</div>
-                <div class="member-position">{{team}} - {{subteam}} ({{major}})</div>
-            </div>
-        {{/members}}
-    </div>
+    {{#teams}}
+        <h1>{{name}} Team</h1>
+        <div class="row text-center">
+            {{#members}}
+                <div class="col-md-4 member">
+                    <img src="images/members/{{imagefile}}" class="img-responsive center-block">
+                    <div class="member-name">{{firstname}} {{lastname}}</div>
+                    <div class="member-position">{{subteam}} ({{major}})</div>
+                </div>
+            {{/members}}
+        </div>
+    {{/teams}}
 </div>
 
 {{{footer}}}
