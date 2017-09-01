@@ -131,3 +131,6 @@ async.map(["css", "js", "images", "files"],
 
 // Copy extra folder to root
 ncp.ncp("src/extra", "build");
+
+// Copy home.html to index.html
+ncp.ncp("build/home.html", "build/index.html");
