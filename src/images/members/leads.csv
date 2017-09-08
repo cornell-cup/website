@@ -1,8 +1,7 @@
-First Name      ,Last Name      ,Image File     ,Major  ,Team       ,Position
-Maria           ,Alanis         ,IMG_6897.JPG   ,       ,Business   ,Business Lead
-Harley          ,Dietz          ,IMG_6847.JPG   ,MechE  ,R2         ,Mechanical Lead
-Ronnie          ,Forster        ,IMG_6682.JPG   ,MechE  ,MiniBot    ,Mechanical Lead
-Matt            ,Filipek        ,IMG_6891.JPG   ,ECE    ,MiniBot    ,Electrical Lead
-Tahmid          ,Mahbub         ,placeholder.jpg,ECE    ,R2         ,Electrical Lead
-Trevor          ,Edwards        ,IMG_6679.JPG   ,CS     ,MiniBot    ,Software Lead
-Scott           ,Wu             ,IMG_6782.JPG   ,CS     ,R2         ,Software Lead
+First Name      ,Last Name      ,Image File     ,Major  ,,Position
+Megan           ,Messick        ,IMG_6872.JPG   ,MechE  ,,Mechanical Lead
+Alexa           ,Ditonto        ,IMG_6729.JPG   ,MechE  ,,Mechanical Lead
+Vaidehi         ,Garg           ,IMG_6815.JPG   ,ECE    ,,Electrical Lead
+Peter           ,Slater         ,IMG_6836.JPG   ,ECE    ,,Electrical Lead
+Celine          ,Choo           ,IMG_6878.JPG   ,CS     ,,Software Lead
+Scott           ,Wu             ,IMG_6782.JPG   ,CS     ,,Software Lead
