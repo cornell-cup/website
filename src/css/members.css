@@ -1,3 +1,10 @@
 .members .member {
     margin-bottom: 1em;
 }
+
+.member-box {
+    background-color: rgb(224, 92, 92);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
